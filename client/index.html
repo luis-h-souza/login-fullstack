@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <main class="form-side">
+            <a href="#" title="Logo">
+                <img src="assets/laplace.svg" alt="Laplace Logo" class="logo">
+            </a>
+            <form class="my-form" id="loginForm">
+                <div class="form-welcome-row">
+                    <h1>Bem vindo!</h1>
+                    <h2>Faça login com sua conta!</h2>
+                </div>
+                <div class="socials-row">
+                    <a href="#" title="Use Github">
+                        <img src="assets/google.png" alt="Google">
+                        Continue com Google
+                    </a>
+                </div>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    ou
+                    <div class="divider-line"></div>
+                </div>
+                <div class="text-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" placeholder="email@example.com.br"
+                        required>
+                    <div class="error-message">E-mail está em um formato inválido</div>
+                </div>
+                <div class="text-field">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" name="password" placeholder="Sua senha"
+                        title="Mínimo de 6 caracteres, sendo pelo menos 1 letra, 1 número e 1 símbolo"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{6,}$" required>
+                    <div class="error-message">Mínimo de 6 caracteres, sendo pelo menos 1 letra, 1 número e 1 símbolo
+                    </div>
+                </div>
+                <button class="my-form__button" type="submit" id="submitBtn" disabled>
+                    Entrar
+                </button>
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Não possui conta?</span>
+                        <a href="./cadastrar.html" title="Reset Password">
+                            Cadastrar
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <aside class="info-side">
+            <div class="blockquote-wrapper">
+                <img src="assets/returns.png" alt="Returns" class="returns">
+                <blockquote>
+                    Com a Laplace, obtive um desempenho significativamente superior ao do S&P 500 nos últimos três anos.
+                </blockquote>
+                <div class="author">
+                    <img src="assets/avatar.png" alt="Avatar" class="avatar">
+                    <span class="author-name">@ai_trader</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="./script.js"></script>
+
+</html>
