@@ -1,0 +1,6 @@
+# Ignorar dependências do frontend
+client/node_modules/
+
+# Ignorar dependências e arquivos de build do backend (exemplo Node.js/Python/Java)
+server/node_modules/
+server/.env/
